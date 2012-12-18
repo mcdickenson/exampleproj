@@ -1,0 +1,119 @@
+\documentclass[12pt,letter]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% -------------------- defaults -------------------- %
+% load lots o' packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage[american]{babel}
+%\usepackage[bibstyle=numeric,citestyle=numeric,sorting=none,backend=bibtex8,autopunct=true]{biblatex}
+% or style=authortitle-ibid
+\usepackage{booktabs}
+\usepackage[format=hang,font=small, labelfont=bf]{caption}
+%\captionsetup{labelsep=none,textformat=\empty}
+%\captionsetup{list-entry=heading}
+\captionsetup[table]{justification=centerfirst}
+\captionsetup[figure]{justification=centerfirst}
+\usepackage{coordsys}
+\usepackage{dcolumn}
+\usepackage{endnotes}
+%\let\footnotemark=
+%\let\footnotetext=\endnote
+\usepackage{enumerate}
+%\usepackage[nofiglist, notablist]{endfloat}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[longnamesfirst]{natbib}
+% \usepackage{notes2bib}
+% \let\footnotemark=\bibnotemark
+% \let\footnotetext=\bibnotetext
+\usepackage[section]{placeins}
+\usepackage{rotating}
+%\usepackage{sectsty} % Custom section fonts
+%\sectionfont{\rmfamily\mdseries\Large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+\usepackage{setspace}
+\usepackage{subfig}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{qtree}
+
+% More font options
+% \usepackage[T1]{fontenc} % special fonts
+%\usepackage[math]{kurier} % kurier font
+%\usepackage[bitstream-charter]{mathdesign}
+% \usepackage[sc,osf]{mathpazo} % palatino-style font
+%\usepackage{kmath,kerkis} % nice serif font
+%\usepackage[adobe-utopia]{mathdesign} % fancy serif font
+%\usepackage{textgreek}
+%\usepackage{subfig}
+%\usepackage{floatrow}
+%\usepackage{times}
+
+% listings package options
+\lstset{
+    basicstyle=\ttfamily,
+    showstringspaces=false
+}
+
+% define clickable links and their colors
+\hypersetup{%
+unicode=false,          % non-Latin characters in Acrobat's bookmarks
+pdftoolbar=true,        % show Acrobat's toolbar?
+pdfmenubar=true,        % show Acrobat's menu?
+pdffitwindow=false,     % window fit to page when opened
+pdfstartview={FitH},    % fits the width of the page to the window
+pdfnewwindow=true,%
+pagebackref=false,%
+pdfauthor={Author},%
+pdftitle={Title},%
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=blue}
+
+%%% CUSTOMIZATION
+\def\myauthor{My Author}
+\def\mytitle{My Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mysubtitle{}
+\def\myaffiliation{My Affiliation}
+\def\myaddress{My Address}
+\def\myemail{my@email.com}
+\def\myweb{http://www.mywebsite.com}
+\def\myversion{}
+\def\myrevision{}
+
+
+\title{\mytitle}
+\author{\myauthor \\ \texttt{\myemail} }
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+\begin{abstract}
+Abstract text goes here.
+\end{abstract}
+
+\section{Section Title}
+Your text
+
+\subsection{Subsection Title}
+Your Text
+
+\end{document}
