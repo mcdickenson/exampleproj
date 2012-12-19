@@ -34,7 +34,3 @@ all:
 	@echo "setwd(pathData) # for example" >> rcode/start.R
 	touch drafts/$${PWD##*/}Draft.tex
 	cat article-generic.tex > drafts/$${PWD##*/}Draft.tex
-
-TEXFILE= paper
-$(TEXFILE).pdf: $(TEXFILE).tex
-	rubber --pdf $(TEXFILE)
